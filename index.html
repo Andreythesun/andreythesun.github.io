@@ -5,22 +5,8 @@
  	<title>Сайт апулаза</title>
  	<meta>
  </head>
-<?php
-$connectiondb = mysqli_connect('localhost', 'root', '', 'apulaz_db' );
-  //подключение к бд
-global $result;
-global $record;
-
-$result = mysqli_query($connectiondb, "SELECT * FROM `articles`");
-
-while (($record = mysqli_fetch_assoc($result))) //массив
-{
-print_r ($record); //выведение переменных
-echo '<hr>';
-}
-?>
-
 <body>
+	<?php echo 123; ?>
 <form action="first.php" metod="post">
  <p>Name:<input type="text" name="name" /></p>   <!--imput "name"-->
  <p>Age: <input type="text" name="age" /></p>     <!--input age-->
