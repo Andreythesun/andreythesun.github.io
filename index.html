@@ -11,7 +11,7 @@
      border-spacing: 1px; /* Расстояние между ячейками */
      }
      td, th {
-     background: maroon; /* Цвет фона ячеек */
+     background: green; /* Цвет фона ячеек */
      padding: 5px; /* Поля вокруг текста */
      }
      #col {
@@ -20,7 +20,7 @@
     </style>
  </head>
  <body>
-	<table>
+	<table> <!--1 table-->
            <tr> <!--1 line-->
    	<th colspan="6" align="center">Расписаниие по нечётным неделям</th>
    </tr>
@@ -34,5 +34,20 @@
     <th align="center">Конец учёбы</th><td>14:50</td><td>14:50</td><td>14:50</td><td>16:30</td><td>12:50</td>
    </tr>
   </table>
+  <table> <!--2 table-->
+        <tr> <!--1 line-->
+   	<th colspan="6" align="center">Расписаниие по чётным неделям</th>
+   </tr>
+   <tr id="col"> <!--2 line-->
+   	<th>День недели</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th>
+   </tr> 
+   <tr> <!--3 line-->
+    <th align="center">Начало учёбы</th><td>11:20</td><td>11:20</td><td>8:00</td><td>11:20</td><td>9:40</td>
+   </tr>
+   <tr>
+    <th align="center">Конец учёбы</th><td>14:50</td><td>14:50</td><td>12:50</td><td>16:30</td><td>16:30</td>
+   </tr>
+  </table>
+	 
  </body>
 </html>
