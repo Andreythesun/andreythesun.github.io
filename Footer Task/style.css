@@ -1,139 +1,124 @@
 body {
-    margin: 0;
+  margin: 0;
 }
 
 footer {
-    position: relative;
-    width: 1920px;
-    height: 371px;
-    color: #232323;
-    background: linear-gradient(88.17deg, #E3E8FF 2.56%, #ECEEF7 92.54%);
-    font-family: 'Arial';
-    font-style: normal;
-    
-  }
-  
-  .ftr-h {
-    position: absolute;
-    left: 360px;
-    top: 60px;
-  
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-  }
-  
-  footer .text {
-    position: absolute;
-    left: 360px;
-    top: 119px;
-  
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  
-  footer .contacts {
-    display: flex;
-    justify-content: space-around;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-    position: absolute;
-    top: 186px;
-  }
-  
-  .contact-container {
-    display: flex;
-    position: absolute;
+  display: block;
+  min-height: 371px;
+  color: #232323;
+  background: linear-gradient(88.17deg, #e3e8ff 2.56%, #eceef7 92.54%);
+  font-family: "Arial";
+  font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1080px;
+  padding: 0 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.footer-inner {
+  padding: 60px 0;
+}
+
+.footer-h {
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+footer .text {
+  padding-bottom: 40px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+footer .contacts {
+  display: flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact-container {
+  display: flex;
+  padding-right: 125px;
+}
+
+.contact-container img {
+  width: 37px;
+  height: 37px;
+}
+
+.contact-text {
+  margin: 5px 0 0 15px;
+}
+
+.contact-h {
+  margin-bottom: 12px;
+}
+
+.contact-container .info {
+  font-weight: 400;
+  color: #4e4e4e;
+}
+
+.phone {
+  width: 192px;
+}
+
+.e-mail {
+  width: 174px;
+}
+
+.adress {
+  width: 283px;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    min-width: 330px;
   }
 
-  .contact-container img {
-    width: 37px; 
-    height: 37px; 
+  .footer-inner {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
   }
-  
+
+  .footer-h {
+    font-size: 22px;
+    line-height: 28.6px;
+  }
+
+  footer .text {
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  footer .contacts {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .contact-container {
+    padding-right: 10px;
+    padding-bottom: 30px;
+  }
+
   .contact-container .info {
     font-weight: 400;
     color: #4e4e4e;
   }
-
-  .phone {
-    width: 192px;
-    height: 71px;
-    left: 360px;
-  }
-  
-  .e-mail {
-    width: 174px;
-    height: 71px;
-    left: 674px;
-  }
-  
-  .adress {
-    width: 283px;
-    height: 71px;
-    left: 975px;
-  }
-  
-  @media only screen and (max-width: 390px) {
-    footer {
-        width: 390px;
-        height: 534px;
-      }
-
-      .ftr-h {
-        position: absolute;
-        left: 30px;
-        top: 40px;
-      
-        font-size: 22px;
-        line-height: 28.6px;
-      }
-
-      footer .text {
-        position: absolute;
-        left: 30px;
-        top: 89px;
-        width: 330px;
-      
-        font-size: 16px;
-        line-height: 24px;
-      }
-
-      footer .contacts {
-        display: block;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 24px;
-        position: absolute;
-        top: 0px;
-      }
-
-      .contact-container .info {
-        font-weight: 400;
-        color: #4e4e4e;
-      }
-    
-      .phone {
-        width: 192px;
-        height: 71px;
-        left: 30px;
-        top: 191px;
-      }
-      
-      .e-mail {
-        width: 174px;
-        height: 71px;
-        left: 30px;
-        top: 286px;
-      }
-      
-      .adress {
-        width: 283px;
-        height: 71px;
-        left: 30px;
-        top: 381px;
-      }
 }
-    
